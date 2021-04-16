@@ -1,15 +1,17 @@
-import random
+import random as rand
 
-def genPassword(len):
+def genPassword(length):
     characters = ["qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890!~`@#$%^&*();"]
 
     output = []
+    
 
-    for i in range(len):
-        output += characters[random.choice(characters)]
-    pass
+    for i in range(length):
+        output += rand.choice(characters)
 
-random.seed()
+    print("Your password is:", output)
+
+rand.seed()
 
 print("Enter an integer length for the password: ")
 input = input()
