@@ -1,0 +1,2 @@
+def findDevisors(a):
+    pass
