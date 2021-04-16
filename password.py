@@ -4,3 +4,8 @@ def genPassword(len):
     for i in range(len):
         pass
     pass
+
+print("Enter an integer length for the password: ")
+input = input()
+num = int(input)
+genPassword(num)
