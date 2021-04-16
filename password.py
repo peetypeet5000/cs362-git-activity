@@ -1,15 +1,10 @@
 import random as rand
 
 def genPassword(length):
-    characters = ["qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890!~`@#$%^&*();"]
-
-    output = []
+    characters = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890!~`@#$%^&*();/.,}[{]"
     
-
-    for i in range(length):
-        output += rand.choice(characters)
-
-    print("Your password is:", output)
+    print("Your password is: ")
+    print("".join(rand.choices(characters, k =length)))
 
 rand.seed()
 
